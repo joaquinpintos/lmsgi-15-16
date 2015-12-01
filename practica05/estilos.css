@@ -1,0 +1,83 @@
+html{
+    font-size:18px;
+}
+
+h1,h2,h3{
+    font-family: Quattrocento,serif;
+}
+
+p,address{
+    font-family: "Quattrocento sans",sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+#principal{
+    background-color: #b9b6b6;
+}
+
+
+h1{
+    text-align:center;
+    text-transform: uppercase;
+    font-size:2rem;
+    font-weight: bold;
+    color: rgb(63,110,128);
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:1.8rem;
+    color: hsl(194,55%,66%);
+}
+
+#lista strong{
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #aa4326;
+}
+
+em{
+    font-style: normal;
+    font-weight: bold;
+    color: #4c94a9;
+}
+
+#lista strong.artista{
+    color: #34802f;
+}
+
+#lista strong.cancion{
+    color: #713080;
+}
+
+article:nth-of-type(odd){
+    background-color: antiquewhite;
+}
+
+h3{
+    font-weight:bold;
+    font-size:1.8rem;
+    background-color: #333232;
+    color:white;
+}
+
+h3+p{
+    font-weight:bold;
+    letter-spacing:.5rem;
+    font-size:1.5rem;
+}
+
+q{
+    font-style: italic;
+    font-weight: bold;
+    color:#4c94a9
+}
+
+address{
+    text-align:right;
+    color:gray;
+}

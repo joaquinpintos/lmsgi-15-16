@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+html{
+    font-size:20px;
+}
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h1 small{
+    font-size:1rem;
+    color: #c59073;
+    text-underline: none;
+}
+
+ul>li{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 700;
+    font-size:1.5rem;
+    color: #55708a;
+}
+
+ul>li:nth-of-type(odd){
+    background-color: bisque;
+}
+
+ul>li>ul>li{
+    font-family: Montserrat,sans-serif;
+    font-size:1rem;
+    color:black;
+}
+
+ul>li>ul>li:nth-of-type(odd){
+    background-color: transparent;
+}
+
+
+
+li>strong{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:1rem;
+    color: #d47a56;
+}
+
+li.inmaterial>strong{
+    color:#713080;
+}
+
+li.natural>strong{
+    color: #318030;
+}
+
+.castilla{
+    text-align: center;
+    background-color: #55708a;
+    color:white;
+}
+.castilla li{
+    color:white;
+    text-align: left;
+}

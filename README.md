@@ -1,0 +1,2 @@
+#Código de las prácticas corregidas del módulo LMSGI de Jorge Sánchez
+En es te repositorio se encuentra el código de las prácticas realizadas en el ciclo de grado superior de **Administración de Sistemas Informáticos en Red** correspondientes al módulo de **Lenguajes de Marcas y Sistemas de Gestión de Información** impartido en el [Centro Don Bosco-Salesianos](http://www.salesianosvillamuriel.com) de **Villamuriel de Cerrato (Palencia)**

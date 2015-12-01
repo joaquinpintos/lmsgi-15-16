@@ -1,0 +1,40 @@
+h1{
+    font-size:30pt;
+}
+
+h2{
+    font-size:24pt;
+}
+p,li,dt,dl{
+    font-size: 16pt;
+}
+
+strong{
+    color:blue;
+}
+
+em strong{
+    color:blueviolet;
+}
+
+ul li{
+    color:blue;
+}
+
+.rojo{
+    color:red;
+}
+
+.sombreado{
+    background-color:lightgray;
+}
+
+dt{
+    font-weight:bold;
+}
+
+address{
+    background-color:black;
+    color:white;
+}
+

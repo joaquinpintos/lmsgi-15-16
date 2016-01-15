@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Neuton:400,700,400italic);
+body{
+    background-color:black;
+    background-size:100% 100px;
+    background-repeat:no-repeat;
+    color:white;
+    font-family: Neuton, serif;
+}
+h1,h2{
+    background-color:rgba(0,0,0,.5);
+    font-family: Montserrat, sans-serif;
+}
+h2>small{
+    background-color: white;
+    color:black;
+    font-size:.5em;
+}
+img{
+    width:25%;
+    border:2px solid white;
+}
+.centro{
+    text-align:center;
+}
+
+p,ul{
+    font-size:1.5em;
+}
+
+h2:last-of-type{
+    background-color:rgba(255,255,255,.5);
+}
+
+a{
+    color:yellow;
+}
+
+a:hover{
+    text-decoration: none;
+    background-color: yellow;
+    color:black;
+}

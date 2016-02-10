@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Aladin);
+
+body{
+	background-color: #ACCDFB;
+	background-image: url('imagenes/fondo.png');
+	background-repeat: repeat-y;
+	color:black;
+	font-family:Garamond,"Times New Roman",Times,serif;
+}
+
+h1,h2,h3{
+	font-family:Aladin, fantasy;
+	font-weight: 400;
+	text-shadow: black 5px 5px  5px;
+}
+
+h1{
+	font-size:30pt;
+	color:white;
+	background-color: #255089;
+	background-image: url('imagenes/girasolesMiniatura.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	text-align: center;
+}
+
+h2,h3,p,ul,figure{
+	margin-left:150px;
+}
+
+h2{
+	border-bottom:4px solid white;
+	font-size:28pt;
+	color:white;
+}
+
+h3{
+	font-size:20pt;
+	color:white;
+}
+
+p{
+	font-size:14pt;
+	font-weight: bold;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: justify;
+}
+
+
+figcaption{
+	background-color: black;
+	color:lightgray;
+	font-family: verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+}
+
+figure{
+	border:white 1px solid;
+	padding:5px;
+	background-color: #ACCDFB;
+}
+
+ul{
+	list-style-image: url('imagenes/pincel.png');
+	font-size:20pt;
+	border:2px solid white;
+	background-color:#142141;
+}
+
+li{
+	color:white;
+	margin:20px;
+	padding:5px;
+	border:3px black solid;
+}
+
+li:hover{
+	background-color: #5470a9;
+}
+
+
+
+a{
+	color:white;
+}
+
+a:hover{
+	color:white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+a:hover + strong{
+	display:none;
+}
+
+
+@media screen and (max-width:700px){
+	body{
+		background-image: none;
+	}
+	h2,h3,p,ul,figure{
+		margin-left:10px;
+	}
+
+}

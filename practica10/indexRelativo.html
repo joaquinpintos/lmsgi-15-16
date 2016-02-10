@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <style>
+        table{
+            width:100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        td{
+            margin: 0;
+            vertical-align: top;
+            background-color: #d1cfb5;
+            border:none;
+            padding:0;
+        }
+        img{
+            opacity:.5;
+            width:100%;
+        }
+        td img:hover{
+            opacity:1;
+        }
+        tr:first-of-type td{
+            vertical-align: middle;
+            height:220px;
+            background-color: black;
+        }
+        td[rowspan="2"]{
+            width:25%;
+        }
+        td.centro{
+            width:50%;
+        }
+        td.columna{
+            width:25%;
+        }
+        td.columna:first-of-type{
+            border-right:2px solid #7c6937;
+        }
+        td.pie{
+            text-align: center;
+            background-color: #7c6937;
+            color:white
+        }
+        h1,h2{
+            text-align: center;
+            margin:0;
+            font-family: Monserrat, sans-serif;
+            background-color: #7c6937;
+            color:white;
+            font-weight: 700;
+        }
+        p,li{
+            color: #54412a;
+            font-family: Merriweather,serif;
+            font-weight:400;
+            font-size:.9em;
+        }
+        p{
+            margin:10px 1px;
+            text-align: justify;
+        }
+        li{
+            list-style-type: circle;
+        }
+        li:nth-of-type(even){
+            list-style-type: disc;
+        }
+        body{
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4">
+            <img src="titulo.jpg" alt="Palencia">
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <img src="villandrando.jpg" alt="Colegio Villandrando">
+        </td>
+        <td colspan="2" class="centro">
+            <h1>Monumentos</h1>
+            <p>
+                Palencia dispone de numerosos monumentos interesantes.
+                Debido a su importante actividad medieval poseee una gran
+                cantidad de edificios religiosos entre los que destaca la
+                Catedral de Palencia así como la iglesia de San Miguel
+                con su peculiar torre de defensa y el monumento más
+                conocido de la ciudad: El Cristo del Otero
+            </p>
+            <p>
+                A finales del siglo XIX y principios del XX aparecieron
+                edificios suntuosos y civiles que han embellecido una buena
+                parte de la ciudad, en especial la transitada Calle Mayor.
+
+            </p>
+        </td>
+        <td rowspan="2">
+            <img src="diputacionOpt.jpg"  alt="Palacio de la Diputación de Palencia">
+        </td>
+    </tr>
+    <tr>
+        <td class="columna">
+            <h2>Edificios religiosos</h2>
+            <ul>
+                <li>Cristo del Otero</li>
+                <li>Catedral Mayor</li>
+                <li>Iglesia de San Miguel</li>
+                <li>Iglesia de San Lázaro</li>
+                <li>Convento de San Pablo</li>
+                <li>Iglesia de la Compañía</li>
+            </ul>
+        </td>
+        <td class="columna">
+            <h2>Edificios civiles</h2>
+            <ul>
+                <li>Diputación de Palencia</li>
+                <li>Colegio Villandrando</li>
+                <li>Casa del Cordón</li>
+                <li>Casa de Flora Germán</li>
+                <li>Hospital de San Bernabé</li>
+                <li>Casino de Palencia</li>
+            </ul>
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="puentecillas.jpg" alt="Puentecillas">
+        </td>
+        <td colspan="2">
+            <img src="sanmiguelOpt.jpg" alt="Iglesia de San Miguel">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" class="pie">
+            <address>Página realizada en el Centro Don Bosco, Salesianos de Villamuriel</address>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

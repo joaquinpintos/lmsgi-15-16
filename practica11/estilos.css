@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+body{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin:0;
+}
+
+h1{
+    background-color:black;
+    margin:0;
+    color:white;
+    font-family: "Bree serif", serif;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom:.5em;
+}
+
+table.menu{
+    width:100%;
+    border-collapse:collapse;
+    border-spacing: 0;
+    color:white;
+}
+
+table.menu td{
+    width:33.3%;
+    background-color:black;
+    text-align: center;
+    font-family: Arial,sans-serif;
+    font-size:1.5em;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+table.menu td:hover{
+    background-color:white;
+    color:black;
+}
+
+table.menu td:hover a{
+    color:black;
+}
+table.menu a:hover{
+    background-color:white;
+    color:black;
+}
+
+table.cuerpo{
+    width:100%;
+    height:100%;
+}
+
+table.cuerpo td{
+    width:50%;
+    vertical-align: top;
+}
+
+table.cuerpo td:last-of-type {
+    background-color: rgba(0,0,0,.5);
+}
+
+table.cuerpo td img{
+    width:100%;
+}
+
+table.cuerpo h2{
+    text-align: center;
+    font-family: "Bree Serif", serif;
+    font-size:2em;
+    color:white;
+}
+
+table.cuerpo h3{
+    text-align: left;
+    font-family: "Bree Serif", serif;
+    font-size:1.5em;
+    font-weight: normal;
+    color:white;
+    background-color: saddlebrown;
+}
+
+table.cuerpo p{
+    text-align: left;
+    margin-left: 2em;
+    font-family: Arial, sans-serif;
+    font-size:1.6em;
+    font-weight: bold;
+    color:white;
+}
+
+table.cuerpo table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%
+}
+
+table.cuerpo table td,table.cuerpo table th {
+    text-align: center;
+    color:white;
+    font-size:1.3em;
+}
+
+table.cuerpo table th{
+    background-color: #333232;
+    font-family: "Bree Serif",serif;
+    font-weight: 400;
+}
+table.cuerpo table td{
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+}
+table.cuerpo table td:last-of-type {
+    background-color: transparent;
+}

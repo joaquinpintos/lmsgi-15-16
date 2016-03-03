@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Matriculación</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<form action="#">
+	<table>
+		<colgroup>
+			<col id="c1">
+			<col id="c2">
+		</colgroup>
+		<tr>
+			<th colspan="2">
+				<h1>Formulario de Matriculación</h1>	
+			</th>
+		</tr>
+		<tr>
+			<td><label for="nombre">Nombre</label></td>
+			<td><input type="text" name="nombre" id="nombre"></td>
+		</tr>
+		<tr>
+			<td>Apellidos</td>
+			<td><input type="text" name="apellidos"></td>
+		</tr>
+		<tr>
+			<td><label for="pass">Contraseña</label></td>
+			<td><input type="password" name="contra" id="pass"></td>
+		</tr>
+		<tr>
+			<td>Etapa educativa</td>
+			<td>
+				<fieldset>
+					<legend>Seleccione una sola opción</legend>
+					<input type="radio" id="radio1" name="edad" value="12">
+					<label for="radio1">Primaria (12 &euro;)</label><br>
+					<input type="radio" id="radio2" name="edad" value="30">
+					<label for="radio2">Secundaria (30 &euro;)</label><br>
+					<input type="radio" id="radio3" name="edad" value="30">
+					<label for="radio3">Formación Profesional de grado medio (30 &euro;)</label><br>
+					<input type="radio" id="radio4" name="edad" value="50">
+					<label for="radio4">Bachillerato (50 &euro;)</label><br>
+					<input type="radio" id="radio5" name="edad" value="40">
+					<label for="radio5">Formación Profesional de grado superior (40 &euro;)</label><br>
+					<input type="radio" id="radio6" name="edad" value="700">
+					<label for="radio6">Estudios Universitarios de grado medio (700 &euro;)</label><br>
+					<input type="radio" id="radio7" name="edad" value="900">
+					<label for="radio7">Estudios Universitarios de grado superior (900 &euro;)</label><br>
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td>Otras opciones</td>
+			<td>
+				<fieldset>
+					<legend>Seleccione las opciones pertinentes</legend>
+					<input type="checkbox" id="numerosa" name="numerosa" value=".2">
+					<label for="numerosa">Familia Numerosa (20%)</label><br>
+					<input type="checkbox" id="minusvalia" name="minusvalia" value=".5">
+					<label for="minusvalia">Minusvalía (50%)</label><br>
+					<input type="checkbox" id="mayor" name="mayor" value=".1">
+					<label for="mayor">Mayor de 30 años (10%)</label>
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="submit">Calcular</button>
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div id="formulario">
+    <h1>Alta de Usuario</h1>
+    <form action="#">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <label for="nombre">Nombre <strong>*</strong></label>
+                        <input class="corto" type="text" name="nombre" id="nombre" required >
+                    </td>
+                    <td  class="user">
+                        <label for="apellido">Apellido <strong>*</strong></label>
+                        <input class="corto" type="text" name="apellido" id="apellido" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="mail">
+                        <label for="mail">E-mail <strong>*</strong></label>
+                        <input type="email" name="mail" id="mail" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="password">
+                        <label for="password">Contraseña <strong>*</strong></label>
+                        <input type="password" name="password"  required id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radio" colspan="2">
+                        <input type="radio" name="sexo" id="hombre">
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" name="sexo" id="mujer">
+                        <label for="mujer">Mujer</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="check" colspan="2">
+                        <input type="checkbox" name="familiar" id="familiar">
+                        <label for="familiar">Familiar</label><br>
+                        <input type="checkbox" name="trabajador" id="trabajador">
+                        <label for="trabajador">Trabajador</label><br>
+                        <input type="checkbox" name="socio" id="socio">
+                        <label for="socio">Socio</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numero" colspan="2">
+                        <label for="nombre">Edad <strong>*</strong></label>
+                        <input class="corto" type="number" name="edad" id="edad" required min="18" max="65">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="2" class="button">
+                    <button>Alta</button>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+
+    </form>
+</div>
+</body>
+</html>

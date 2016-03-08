@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300);
+
+body{
+    background-color: hsl(26,4%,76%);
+    margin:0;
+    font-family: "Titillium Web",sans-serif;
+    font-weight: 300;
+}
+#formulario{
+    width:800px;
+    margin:auto;
+    background-color:rgb(36,49,60);
+}
+
+h1{
+    margin:0;
+    text-align: center;
+    padding:1em 0;
+    color:white;
+    font-weight: 300;
+}
+
+label{
+    color:hsl(171,11%,70%);
+    font-size:1.2em;
+    margin-right:.5em;
+}
+
+input{
+    background-color:transparent;
+    border:none;
+    outline: none;
+    border-bottom:1px solid hsl(171,11%,70%);;
+    color:white;
+    font-size:1.5em;
+    width:600px;
+}
+
+input:focus {
+    background-color: #1ab188;
+}
+
+input[type="password"]{
+    width:570px;
+}
+
+.corto{
+    width:200px;
+}
+
+
+label strong{
+    color:#1ab188;
+}
+table{
+    border-spacing: 20px;
+    width:100%;
+}
+td{
+    padding:10px;
+    border:2px solid hsl(171,11%,70%);
+    background-position: 97%;
+    background-repeat: no-repeat;
+}
+
+td.radio{
+    border:none;
+    text-align:center;
+}
+
+.user{
+    background-image: url(img/user.png);
+}
+.mail{
+    background-image: url(img/mail-icon.png);
+    background-position: 98.5%;
+}
+.password{
+    background-image: url(img/candado.png);
+    background-position: 98.5%;
+}
+
+input[type="radio"],input[type="checkbox"]{
+    display:none;
+}
+
+input[type="radio"]+label{
+    color:white;
+    background-color: #435159;
+    width:45%;
+    margin:0;
+    display:inline-block;
+    height:40px;
+    vertical-align: middle;
+}
+input[type="radio"]:checked+label {
+    background-color: #1ab188;
+}
+td.radio,td.button{
+    border:none;
+}
+
+td.check{
+    text-align: left;
+}
+
+input[type="checkbox"]+label {
+    padding-left:75px;
+    background-image: url(img/no.png);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+input[type="checkbox"]:checked+label {
+    background-image: url(img/si.png);
+}
+
+button{
+    border:none;
+    outline:none;
+    width:100%;
+    background-color: #435159;
+    color:white;
+    text-transform: uppercase;
+    font-size:2em;
+    font-family: "Titillium Web",sans-serif;
+    padding:20px;
+}
+
+button:hover{
+    background-color: #1ab188;
+}

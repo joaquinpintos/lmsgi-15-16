@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div id="capa">
+    <p><img src="img/user.png" alt="Usuario" style="text-align: center"></p>
+    <form action="#">
+        <input type="text" name="user" id="user" placeholder="Usuario">
+        <input type="password" name="password" id="password" placeholder="Contraseña">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" id="hombre" name="sexo">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="sexo">
+            <label for="mujer">Mujer</label><br>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="recordar" id="recordar">
+        <label for="recordar">Recordar</label><br><br>
+        <div id="botones">
+            <button>ENVIAR</button>
+            <button class="seguir" type="button">SEGUIR</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

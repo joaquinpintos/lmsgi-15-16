@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Cantarell:400,700);
+
+body{
+    margin:0;
+    background-image: url(../img/parquet.jpg);
+    margin:40px;
+}
+/******************************CABECERA********************/
+#header{
+    width:100%;
+    border-collapse:collapse;
+    background-image: linear-gradient(to right,#042b47,#660c26);
+}
+/*hsl(205,94,28),hsl(342,90,44)*/
+
+#header td.logo{
+    width:100px;
+}
+#header td.titulo{
+    text-align: right;
+    width:50%;
+    font-family: Anton,sans-serif;
+    font-size:150px;
+    color:white;
+}
+#header td:nth-of-type(3){
+    text-align: left;
+    width:50%;
+    font-family: Anton,sans-serif;
+}
+
+
+#header td.anio{
+    font-size:50px;
+    font-family: Anton,sans-serif;
+    color:gray;
+}
+
+#anio2015{
+    vertical-align: bottom;
+}
+#anio2016{
+    vertical-align: top;
+}
+
+/**********************SECCIONES*****************/
+
+h1{
+    font-size:100px;
+    margin:0;
+    font-family: Anton, sans-serif;
+}
+
+h2{
+    color:white;
+    font-family: Cantarell,sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin:0;
+}
+
+p{
+    font-family: Cantarell,sans-serif;
+    font-weight: 400;
+}
+ol{
+    background-color:rgba(255,255,255,.5);
+    margin-top:0;
+    margin-bottom:0;
+    padding-bottom:50px;
+}
+
+li{
+    font-family: Cantarell,sans-serif;
+    font-weight: 400;
+    font-size:20px;
+    list-style-type: upper-roman;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom:2px solid white;
+}
+
+li:first-of-type{
+    font-weight: 700;
+}
+
+li strong{
+    border:2px dotted #2c6624;
+    color: #2c6624;
+}
+
+#west{
+    background-image: url(../img/kobe.png);
+    background-repeat:no-repeat;
+    background-color:#e8a2b6;
+    background-size: contain;
+}
+
+#east{
+    background-image: url(../img/lebron.png);
+    background-position: right;
+    background-repeat:no-repeat;
+    background-color:#b0d8f5;
+    background-size: contain;
+}
+
+#west h1{
+    color:#042b47;
+    text-align: right;
+    margin-right:20px;
+}
+
+#west h2, #west ol{
+    margin-left:50%;
+    margin-right:20px;
+}
+
+#west h2 {
+    background-color: #042b47;
+}
+
+#east h1{
+    text-align: left;
+    color:#660c26;
+    margin-left:20px;
+}
+
+#east h2, #east ol{
+    margin-right:50%;
+    margin-left:20px;
+}
+
+#east h2 {
+    background-color: #660c26;
+}

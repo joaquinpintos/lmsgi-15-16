@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+
+body{
+    font-size:18px;
+}
+
+h1{
+    font-family:Pacifico, cursive;
+    font-size:3em;
+    color: rgb(155, 20, 37);
+    font-weight: normal;
+    text-shadow: gray 3px 3px 5px;
+    text-align: center;
+}
+h1 small{
+    font-size:.5em;
+    color:gray;
+}
+
+p{
+    text-align: center;
+    font-family:Pacifico,cursive;
+    font-size: 1.5em;
+}
+p strong{
+    color: rgb(155, 20, 37);
+}
+
+
+ol.a:first-of-type li{
+    font-size:3em;
+    font-family: "Special Elite", "Courier New", courier,monospace;
+    color:#219296;
+}
+ol.a>li li:nth-of-type(even){
+    background-color:lightgray;
+}
+
+ol.a:first-of-type li li{
+    font-size:.5em;
+    color:hsl(313,74%,62%);
+}
+
+ol.b{
+    background-color: rgba(242, 190, 160, 0.5);
+    line-height: 2em;
+    color: rgb(155, 20, 37);
+    font-size:.7em;
+    font-family: "Special Elite", "Courier New", courier,monospace;
+}
+
+sup{
+    font-size:.5em;
+}
+
+[title]{
+    border:2px dashed lightgray;
+}
+

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+    <h1>Formulario de contacto </h1>
+    <h2><a href="https://www.behance.net/gallery/14245821/FREEBIE-Transparent-UI-Elements">diseño original de Maxine Heyns</a></h2>
+</header>
+<section>
+    <h3>DATOS DE CONTACTO</h3>
+    <form action="examenpr3.php">
+        <div>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="comentarios">Comentarios</label><br>
+            <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+        </div>
+        <div>
+            <label for="notificaciones">Notificaciones</label><br>
+            <select name="notificaciones" id="notificaciones">
+                <option value="diarias" selected>Diarias</option>
+                <option value="semanales">Semanales</option>
+                <option value="mensuales">Mensuales</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+            <legend>Seguir en</legend>
+            <div class="centro">
+                <input type="checkbox" name="facebook" id="facebook" value="facebook">
+                <label for="facebook"></label>
+                <input type="checkbox" name="twitter" id="twitter" value="twitter">
+                <label for="twitter"></label>
+                <input type="checkbox" name="pinterest" id="pinterest" value="pinterest">
+                <label for="pinterest"></label>
+                <input type="checkbox" name="google" id="google" value="google">
+                <label for="google"></label>
+            </div>
+            </fieldset>
+        </div>
+        <div class="centro">
+            <button>ENVIAR</button>
+        </div>
+    </form>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,100);
+
+body{
+    margin:0;
+    background:#715e4b url("img/fondo.png") no-repeat;
+    background-size:cover;
+    font-family: Lato,sans-serif;
+    font-weight: 300;
+    color:white;
+}
+
+h1{
+    font-weight: 100;
+    font-size:3em;
+    text-align: center;
+    text-transform: uppercase;
+    margin:1em 0 0;
+}
+
+h2{
+    font-size:1.3em;
+    text-transform: none;
+    margin:0;
+    text-align: center;
+    font-weight: 100;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    width:500px;
+    height:700px;
+    border-top:15px solid rgba(0,0,0,0.25);
+    border-radius:10px;
+    margin:2em auto;
+    background-color:rgba(255,255,255,.25);
+}
+
+h3{
+    color:rgba(0,0,0,.5);
+    text-align: center;
+    font-size:2em;
+    margin:0;
+    font-weight: 300;
+    margin-top:1em;
+}
+
+label{
+    color:rgba(255,255,255,.5);
+    margin:20px;
+}
+input,textarea,select{
+    margin:.2em 20px;
+    background-color:rgba(255,255,255,.5);
+    color:rgba(0,0,0,.5);
+    border:none;
+    outline:none;
+    font-size:1.5em;
+    border-radius:5px;
+    width:430px;
+    padding:.2em .5em;
+    font-family: Lato,sans-serif;
+    font-weight: 300;
+}
+select{
+    width:460px;
+}
+input:focus,textarea:focus,select:focus{
+    background-color:white;
+}
+div{
+    margin-top:1em;
+}
+
+[type="checkbox"]{
+    display:none;
+}
+
+[type="checkbox"]+label{
+    display:inline-block;
+    width:30px;
+    height:30px;
+}
+
+#facebook+label{
+    background-image:url(img/facebook-off.png);
+}
+#facebook:checked+label{
+    background-image:url(img/facebook-on.png);
+}
+#twitter+label{
+    background-image:url(img/twitter-off.png);
+}
+#twitter:checked+label{
+    background-image:url(img/twitter-on.png);
+}
+#pinterest+label{
+    background-image:url(img/pinterest-off.png);
+}
+#pinterest:checked+label{
+    background-image:url(img/pinterest-on.png);
+}
+#google+label{
+    background-image:url(img/google-off.png);
+}
+#google:checked+label{
+    background-image:url(img/google-on.png);
+}
+
+fieldset{
+    margin:0 20px;
+    border:1px solid rgba(255,255,255,.5);
+}
+legend{
+    color:rgba(255,255,255,.5);
+}
+
+.centro{
+    text-align: center;
+    margin-top:0;
+}
+
+button{
+    width:300px;
+    margin-top:.5em;
+    font-size:2em;
+    color:rgba(255,255,255,.5);
+    background-color: rgba(26, 53, 59, 0.5);
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    border:none;
+    outline:none;
+    border-radius:5px;
+}
+
+button:hover{
+    color:rgba(255,255,255,1);
+    background-color: rgba(26, 53, 59, 1);
+;
+}
+
+button:active{
+    background-color: rgba(166, 137, 79, 0.51);
+}
+

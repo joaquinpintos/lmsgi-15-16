@@ -1,0 +1,34 @@
+Tendencias en creación de aplicaciones web 2016
+
+Design trends often span several years (even decades for some types of design), but Web design is a quickly moving and changing industry where trends come and go quite often.
+
+Algunas tendencias en diseño duran algunos años (incluso décadas en algunos tipos de diseño), pero el diseño Web se mueve muy rápido en una industria cambiante que va y viene demasiado a menudo.
+
+Some of the trends we can expect to see more of this years are: Experimenting navigations and menus, scrolling innovations, components designing webs, more flatten design, material design libraries, full-screen forms and rich and subtle animations
+
+Algunas de las tendencias que podemos esperar que aparezcan en este año son: Controles expermientales de navegación y menú, innovaciones en los scrolls, webs diseñadas por componentes, más diseño plano, librerías de diseño de materiales, formularios a pantalla completa y animaciones ricas y sutiles
+
+Lista de uso de tecnologías en enero de 2016
+
+En el lado del cliente
+JavaScript[92,9%]
+Librerías JavaScript:
+jQuery [95,9%]
+Bootstrap [15,4%]
+Modernizr [14,0%]
+MooTools [5,2%]
+Flash[9,2%]
+Silverlight[0,1%]
+En el lado del servidor
+PHP[81,8%]
+ASP.Net[15,8%]
+Java[3,1%]
+ColdFussion[0,7%]
+Ruby[0,6%]
+JavaScript[0,2%]
+CMS
+Word Press[59,2%]
+Joomla![6,3%]
+Drupal[5,0%]
+Magento[2,9%]
+Fuentes: w3techs, 2016 y TNW News (http://thenextweb.com/dd/2016/01/01/10-web-design-trends-can-expect-see-2016/10)

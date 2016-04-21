@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Imprima);
+
+header{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100px;
+    width:100%;
+    background-color: black;
+}
+h1{
+    color:white;
+    font-size:3em;
+    font-family: "Bree Serif", serif;
+    line-height: 100px;
+    text-align: center;
+    margin:0;
+    font-weight: normal;
+}
+
+nav{
+    position:absolute;
+    left:0;
+    top:100px;
+    height:100px;
+    width:100%;
+    background-color: gray;
+}
+
+nav div{
+    width:33.33%;
+    height:100px;
+    float:left;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav div:hover{
+    background-size: 100% 100%;
+}
+
+#html5{
+    background-color: rgb(240, 102, 43);
+    background-image: url(imagenes/html5.png);
+}
+#css3{
+    background-color: rgb(42, 169, 224);
+    background-image: url(imagenes/css3.png);
+}
+#js{
+    background-color: rgb(240, 219, 79);
+    background-image: url(imagenes/js.png);
+}
+
+.contenido{
+    position:fixed;
+    left:0;
+    top:200px;
+    width:100%;
+    bottom:0;
+    display:none;
+    overflow-y:scroll;
+}
+
+div:hover .contenido{
+    display:block;
+}
+
+#contenidoHTML5{
+    background-color: #d9b9ac;
+}
+#contenidoHTML5 strong{
+    color:#7a391e;
+}
+#contenidoCSS3{
+    background-color: #afd2e1;
+}
+#contenidoCSS3 strong{
+    color:#1c6483;
+}
+#contenidoJS{
+    background-color: #e4ddae;
+}
+#contenidoJS strong{
+    color:#7b712b;
+}
+
+h2{
+    font-size:3em;
+    text-align: left;
+    color:#545252;
+    font-family: "Bree serif",serif;
+    margin:1em 0 1em 5px;
+}
+
+p{
+    font-family: "Imprima", sans-serif;
+    font-size:1.5em;
+    margin-left:50px;
+    text-align: justify;
+}
+
+
+figure{
+    border:4px solid black;
+    float:right;
+}
+figcaption{
+    background-color: black;
+    font-family: "Bree Serif", serif;
+    color:white;
+    text-align: center;
+}
+
+
+@media all and (orientation:landscape){
+    nav{
+        height:auto;
+        bottom:0;
+        width:150px;
+    }
+    nav div{
+        width:150px;
+        height:33.33%;
+    }
+
+    .contenido{
+        left:150px;
+        top:100px;
+        width:auto;
+        right:0;
+    }
+}

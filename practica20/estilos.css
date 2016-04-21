@@ -1,0 +1,100 @@
+
+body{
+    margin:0;
+    background-color: #0a1232;
+}
+
+nav{
+    position: absolute;
+    left:0;
+    top:0;
+    width:200px;
+    height:100%;
+    margin:0;
+    padding: 0;
+    background-color: #104066;
+    z-index:10;
+}
+
+#contenido{
+    position:absolute;
+    left:200px;
+    top:0;
+    right:0;
+    height:100%;
+    background-image: url(imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:1;
+}
+
+nav>ul{
+    position:fixed;
+    top:20px;
+    left:15px;
+    padding:10px;
+    color:white;
+    width:150px;
+    margin:0;
+    display:block;
+}
+
+nav>ul>li{
+    position:relative;
+    width:150px;
+    height:50px;
+    background-color: #006600;
+    margin:0;
+    color:white;
+    text-align: center;
+    display:block;
+}
+
+nav>ul>li>p{
+    padding-top:15px;
+}
+nav>ul>li:hover{
+    background-image: url(imagenes/boton2.png);
+}
+
+nav>ul>li:hover>p{
+    letter-spacing: 5px;
+    transition:1s;
+}
+nav>ul>li>ul{
+    position:absolute;
+    opacity:0;
+    width:650px;
+    height:102px;
+    left:150px;
+    top:-20px;
+    background-color:#006600 ;
+    display:block;
+    transition:opacity 1s, visibility 1s;
+    visibility: hidden;
+}
+
+nav>ul>li:hover>ul{
+    opacity:1;
+    transition:opacity 1s;
+    visibility: visible;
+}
+
+nav>ul>li>ul>li{
+    display:inline-block;
+    padding:10px;
+    float:left;
+}
+
+nav>ul>li>ul>li:hover{
+    background-color:#5e1812;
+}
+
+nav a{
+    color:white;
+    font-family: Arial,Helvetica,sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:10pt;
+}
+

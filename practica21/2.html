@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fondo usuario</title>
+    <style>
+        div{
+            position:fixed;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+<script src="aleatorio.js"></script>
+<script>
+    var r=aleatorioEntero(0,255);
+    var g=aleatorioEntero(0,255);
+    var b=aleatorioEntero(0,255);
+    document.write("<div style='background-color:rgb("+r+","+
+            g+","+b+")'></div>");
+</script>
+</body>
+</html>

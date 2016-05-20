@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fondo usuario</title>
+    <style>
+        div{
+            position:fixed;
+            width:50px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+<script src="aleatorio.js"></script>
+<script>
+    var rojo,verde,azul,left,top;
+    for(var i=1;i<=5000;i++){
+        left=aleatorioDecimal(-10,100);
+        tope=aleatorioDecimal(-10,100);
+        rojo=aleatorioEntero(0,255);
+        verde=aleatorioEntero(0,255);
+        azul=aleatorioEntero(0,255);
+        document.write("<div style='background-color:rgb("+
+                rojo+","+
+                verde+","+
+                azul+");"+
+                "left:"+left+"%;"+
+                "top:"+tope+"%;'>"+
+                "</div>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+</head>
+<body>
+<script src="aleatorio.js"></script>
+<script>
+    var solucion=aleatorioEntero(1,100);
+    var n;
+    var intentos=0;
+    alert("He pensado un número del 1 al 100, a ver si sabes cuál es");
+    do{
+        n=prompt("¿Qué número crees que es?");
+        if(n!=null){
+            if(isNaN(n))
+                    alert("Eso no es un número");
+            else{
+                intentos++;
+                if(n==solucion) alert("¡Acertaste!");
+                else if(n>solucion) alert("Mi número es menor");
+                else alert("Mi número es mayor");
+            }
+        }
+    }while(n!=null && n!=solucion);
+    document.write("<p>Número de intentos: "+intentos+"</p>");
+</script>
+</body>
+</html>

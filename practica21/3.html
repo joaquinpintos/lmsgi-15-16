@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            position:fixed;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+<script src="aleatorio.js"></script>
+<script>
+    var rojo,verde,azul; //almacenan los niveles del color
+    var error=0; //controla si ha ocurrido un error en un cuadro o no
+                //si no lo ha habido, vale cero
+    //constantes que permiten controlar de forma sencilla los errores
+    const CANCELAR=1;
+    const NO_NUMERO=2;
+    const FALLO_RANGO=3;
+
+    rojo=prompt("Escriba el nivel de rojo (de 0 a 255) ");
+    if(rojo==null) error=CANCELAR;
+    else if(isNaN(rojo)) error=NO_NUMERO;
+    else if(rojo<0 || rojo>255) error=FALLO_RANGO;
+    if(error==0) {
+        verde = prompt("Escriba el nivel de verde (de 0 a 255) ");
+        if (verde == null) error = CANCELAR;
+        else if (isNaN(verde)) error = NO_NUMERO;
+        else if (rojo < 0 || verde > 255) error = FALLO_RANGO;
+    }
+    if(error==0) {
+        azul = prompt("Escriba el nivel de azul (de 0 a 255) ");
+        if (azul == null) error = CANCELAR;
+        else if (isNaN(azul)) error = NO_NUMERO;
+        else if (rojo < 0 || azul > 255) error = FALLO_RANGO;
+    }
+    if(error==CANCELAR)
+        document.write("<p>Se canceló la operación</p>");
+    else if(error==NO_NUMERO)
+        document.write("<p>Se necesita un número de 0 a 255</p>");
+    else if(error==FALLO_RANGO)
+        document.write("<p>Es número no está en el rango de 0 a 255</p>");
+    else
+        document.write("<div style='background-color:rgb("+rojo+","+
+                            verde+","+azul+")'></div>");
+
+</script>
+</body>
+</html>

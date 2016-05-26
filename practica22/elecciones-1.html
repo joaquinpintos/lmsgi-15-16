@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/congreso2015.js"></script>
+    <script src="js/senado2015.js"></script>
+</head>
+<body>
+<div id="fondo"></div>
+<h1>Resultado de las elecciones de Diciembre de 2015</h1>
+<h2>Congreso</h2>
+<table>
+    <tr>
+        <th colspan="2">
+            Datos totales
+        </th>
+    </tr>
+    <script>
+        var escrutinio=congreso["escrutinio"];//facilita la escritura del código
+        var votos;
+        document.write("<tr>");
+        document.write("<th>");
+        document.write("Censo total");
+        document.write("</th>");
+        document.write("<td>");
+        document.write(escrutinio["iCenso"]);
+        document.write("</td>");
+        document.write("</tr>");
+        document.write("<tr>");
+        document.write("<th>");
+        document.write("Porcentaje voto");
+        document.write("</th>");
+        document.write("<td>");
+        votos=escrutinio["iVotos"]*100/escrutinio["iCensoEscrutado"];
+        document.write(votos+"%");
+        document.write("</td>");
+        document.write("</tr>");
+        document.write("<tr>");
+        document.write("<th>");
+        document.write("Porcentaje abstencion");
+        document.write("</th>");
+        document.write("<td>");
+        votos=escrutinio["iAbstenciones"]*100/escrutinio["iCensoEscrutado"];
+        document.write(votos+"%");
+        document.write("</td>");
+        document.write("</tr>");
+    </script>
+</table>
+<p>&nbsp;</p>
+
+<table>
+    <tr>
+        <th>Partido</th>
+        <th>Escaños</th>
+    </tr>
+    <script>
+        var candidatura;//irá almacenando cada candidatura a escribir, hace más fácil la escritura del código
+        for(var i in congreso["candidaturas"]){
+            candidatura=congreso["candidaturas"][i];
+            //salimos del bucle si la candidatura actual no tiene escaños
+            //las siguientes tampoco tendrán
+            if(candidatura["iEscanos"]==0) break;
+            else {
+                document.write("<tr>");
+                document.write("<td>");
+                document.write(candidatura["sCandidatura"]);
+                document.write("</td>");
+                document.write("<td>");
+                document.write(candidatura["iEscanos"]);
+                document.write("</td>");
+                document.write("</tr>");
+            }
+        }
+    </script>
+
+</table>
+<h2>Senado</h2>
+<table>
+    <tr>
+        <th colspan="2">
+            Datos totales
+        </th>
+    </tr>
+    <script>
+        var escrutinio=senado["escrutinio"];//facilita la escritura del código
+        var votos;
+        document.write("<tr>");
+        document.write("<th>");
+        document.write("Censo total");
+        document.write("</th>");
+        document.write("<td>");
+        document.write(escrutinio["iCenso"]);
+        document.write("</td>");
+        document.write("</tr>");
+        document.write("<tr>");
+        document.write("<th>");
+        document.write("Porcentaje voto");
+        document.write("</th>");
+        document.write("<td>");
+        votos=escrutinio["iVotos"]*100/escrutinio["iCensoEscrutado"];
+        document.write(votos+"%");
+        document.write("</td>");
+        document.write("</tr>");
+        document.write("<tr>");
+        document.write("<th>");
+        document.write("Porcentaje abstencion");
+        document.write("</th>");
+        document.write("<td>");
+        votos=escrutinio["iAbstenciones"]*100/escrutinio["iCensoEscrutado"];
+        document.write(votos+"%");
+        document.write("</td>");
+        document.write("</tr>");
+    </script>
+</table>
+<p>&nbsp;</p>
+<table>
+    <tr>
+        <th>Partido</th>
+        <th>Escaños</th>
+    </tr>
+    <script>
+        for(var i in senado["candidaturas"]){
+            candidatura=senado["candidaturas"][i];
+            //salimos del bucle si la candidatura actual no tiene escaños
+            //las siguientes tampoco tendrán
+            if(candidatura["iSenadores"]==0) break;
+            else {
+                document.write("<tr>");
+                document.write("<td>");
+                document.write(candidatura["sCandidatura"]);
+                document.write("</td>");
+                document.write("<td>");
+                document.write(candidatura["iSenadores"]);
+                document.write("</td>");
+                document.write("</tr>");
+            }
+        }
+    </script>
+</table>
+</body>
+</html>

@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+body{
+    margin:0;
+}
+#fondo{
+    z-index:-1;
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background:url(../img/urna.jpg) no-repeat center;
+    background-size: 100% 100%;
+}
+
+h1{
+    text-align: center;
+    font-size:3em;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 400;
+    margin:0;
+    background-color: #410002;
+    color:#c0b097;
+}
+h2{
+    text-align: center;
+    font-size:3em;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 400;
+    color:#410002;
+    background-color: #8782a6;
+    margin:1em 0 0 0;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+th,td{
+    font-family:  'Slabo 27px', serif;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    width:50%;
+}
+th{
+    background-color: #8d0910;
+    color:#c0b097;
+}
+th[colspan]{
+    background-color: #410002;
+}
+
+tr:nth-of-type(even) td{
+    background-color: rgba(192, 176, 151, 0.5);
+}
+tr:nth-of-type(odd) td{
+    background-color: rgba(192, 176, 151, 0.75);
+}
+
+/**************** Para la v2 **************/
+.boton{
+    text-align: center;
+}
+.boton+div{
+    display:none;
+}
+button{
+    font-size:2em;
+    margin:1em;
+    border-radius: 10px;
+    font-family:  'Slabo 27px', serif;
+    border:3px solid black;
+    outline: none;
+    background-color:transparent;
+}
+
+button:hover{
+    background-color: white;
+}

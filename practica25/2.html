@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .movil{
+            position:fixed;
+            width:50%;
+            height:50%;
+        }
+        #rojo{
+            background-color: red;
+            left:0;
+            top:0;
+        }
+        #verde{
+            background-color: green;
+            left:50%;
+            top:0;
+        }
+        #azul{
+            background-color: blue;
+            left:0;
+            top:50%;
+        }
+        #amarillo{
+            background-color: yellow;
+            left:50%;
+            top:50%;
+        }
+    </style>
+</head>
+<body>
+<div id="rojo" class="movil"></div>
+<div id="verde" class="movil"></div>
+<div id="azul" class="movil"></div>
+<div id="amarillo" class="movil"></div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+    var $capaMovil=null;
+    var xAnt,yAnt;
+    $(function(){
+       $(".movil").on("mousedown",function(e){
+           $capaMovil=$(this);
+           xAnt=e.pageX;
+           yAnt=e.pageY;
+           $(".movil").css("z-index",1);
+           $(this).css("z-index",10);
+       });
+       $(document.body)
+           .on("mousemove",function(e){
+               if($capaMovil) {
+                   var incrementoX=e.pageX-xAnt;
+                   var incrementoY=e.pageY-yAnt;
+                   $capaMovil.offset({
+                       left:$capaMovil.offset().left+incrementoX,
+                       top:$capaMovil.offset().top+incrementoY
+                   });
+                   xAnt=e.pageX;
+                   yAnt=e.pageY;
+               }
+           })
+           .on("mouseup",function(e){
+               $capaMovil=null;
+           })
+    });
+</script>
+</body>
+</html>

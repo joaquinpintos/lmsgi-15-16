@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #capaColor{
+            position:fixed;
+            left:0;
+            top:0;
+            width:100%;
+            bottom:50px;
+            background-color: hsl(280.62992125984255,50%,99.85714285714286);
+        }
+        #pie{
+            position:fixed;
+            left:0;
+            width:100%;
+            bottom:0;
+            height:50px;
+            background-color: white;
+        }
+        #pie p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="capaColor">
+</div>
+<div id="pie">
+    <p></p>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+    var saturacion=50;
+    var tono;
+    var luminosidad;
+
+    function actualizar(){
+        $("#pie p").text(
+                "Luminosidad: "+luminosidad+", "+
+                "Tono: "+tono+", "+
+                "Saturación: "+saturacion+": "
+        );
+        $("#capaColor").css({
+            "background-color":
+            "hsl("+
+            tono+","+saturacion+
+            "%,"+luminosidad+"%"+
+            ")"
+        });
+    }
+
+    $(function(){
+        $("#capaColor").on("mousemove",function(e){
+            tono = parseInt((e.pageX * 360) / $(this).width());
+            luminosidad = parseInt((e.pageY * 100) / $(this).height());
+            actualizar();
+        });
+        $("body").on("keydown",function(e){
+            if(e.which==38) {
+                if (saturacion < 100) saturacion++;
+            }
+            if(e.which==40) {
+                    if (saturacion > 0) saturacion--;
+            }
+            actualizar();
+        });
+    })
+</script>
+</body>
+</html>

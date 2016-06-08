@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div id="calculadora">
+    <input type="number" id="numero1" placeholder="numero" step=".01" /><br/>
+    <button id="mas">+</button>
+    <button id="menos">-</button>
+    <button id="por">X</button>
+    <button id="entre">/</button>
+    <button id="ce" class="amarillo">CE</button>
+    <br/>
+    <input type="number" id="numero2" placeholder="numero" step=".01" /><br/>
+    <input type="number" id="resultado" readonly placeholder="resultado" step=".01" /><br/>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+    $(function(){
+        var $mas=$("#mas");
+        var $menos=$("#menos");
+        var $por=$("#por");
+        var $entre=$("#entre");
+        var $ce=$("#ce");
+        var $n1=$("#numero1");
+        var $n2=$("#numero2");
+        var $resultado=$("#resultado");
+
+        $mas.on("click",function(e){
+           $resultado.val(parseFloat($n1.val())+parseFloat($n2.val()));
+        });
+        $menos.on("click",function(e){
+           $resultado.val(parseFloat($n1.val())-parseFloat($n2.val()));
+        });
+        $por.on("click",function(e){
+           $resultado.val(parseFloat($n1.val())*parseFloat($n2.val()));
+        });
+        $entre.on("click",function(e){
+           $resultado.val(parseFloat($n1.val())/parseFloat($n2.val()));
+        });
+        $ce.on("click",function(e){
+            $("input").val("");
+        });
+
+    });
+
+</script>
+</body>
+</html>

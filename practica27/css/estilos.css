@@ -1,0 +1,25 @@
+h1{
+    background-color: blue;
+    color:white;
+
+}
+img{
+    float:left;
+    margin:10px;
+}
+label{
+    background-color: blue;
+    color:white;
+}
+.error{
+    background-color:red;
+}
+#capaError{
+    color:red;
+}
+textarea{
+    display:none;
+}
+#labelDescripcion{
+    display:none;
+}

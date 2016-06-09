@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div id="fondo"></div>
+<h1>Agencia de Viajes <em>"Don Bosco"</em></h1>
+<div id="capaForm">
+    <form action="#" id="formulario">
+        <label for="destino">Elija el destino</label><br>
+        <select name="destino" id="destino">
+            <option value=""></option>
+            <option value="islandia">Islandia</option>
+            <option value="brasil">Brasil</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="nuevazelanda">Nueva Zelanda</option>
+            <option value="antartida">Antártida</option>
+        </select><br>
+        <div id="oculto">
+            <p>&nbsp;</p>
+            <label for="nPersonas">Nº de personas</label><br>
+            <input type="number" id="nPersonas" name="nPersonas" value="1" min="1"><br>
+            <label for="precioPersona">Precio por persona</label><br>
+            <input type="text" readonly id="precioPersona" name="precioPersona"><br>
+            <label for="precioTotal">Precio total</label><br>
+            <input type="text" readonly id="precioTotal" name="precioTotal"><br>
+            <button>Comprar</button>
+        </div>
+
+    </form>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/acciones.js"></script>
+</body>
+</html>

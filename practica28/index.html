@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recogida de datos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div id="error"></div>
+<div id="formulario">
+    <h1>Introducción de datos</h1>
+    <form action="http://localhost/datos.php">
+        <table>
+            <tr>
+                <td><label for="nombre">Escriba su nombre</label></td>
+                <td><input type="text" id="nombre" name="nombre"/></td>
+            </tr>
+            <tr>
+                <td><label for="apellido1">Escriba su primer apellido</label></td>
+                <td><input type="text" id="apellido1" name="apellido1"/></td>
+            </tr>
+            <tr>
+                <td><label for="apellido2">Escriba su segundo apellido</label></td>
+                <td><input type="text" id="apellido2" name="apellido2"/></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Escriba su edad</label></td>
+                <td><input type="number" id="edad" name="edad" min="0" max="199"/></td>
+            </tr>
+            <tr>
+                <td><label for="nif">Escriba su nif</label></td>
+                <td><input type="text" id="nif" name="nif"/></td>
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="centrada">
+                    <button id="validar">Enviar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/acciones.js"></script>
+</body>
+</html>

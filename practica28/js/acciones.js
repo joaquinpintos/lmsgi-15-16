@@ -1,7 +1,3 @@
-function error(control,mensaje){
-    control.addClass("error");
-    $capaError.text(mensaje);
-}
 
 $(function(){
 
@@ -11,35 +7,39 @@ $(function(){
     var $apellido1=$("#apellido1");
     var $apellido2=$("#apellido2");
     var $boton=$("#validar");
+    var $edad=$("#edad");
+
+    function error(control,mensaje){
+        control.addClass("error");
+        $capaError.text(mensaje);
+    }
+
 
     $("input").on("focus",function(e){
         $("input").removeClass("error");
         $capaError.text("");
     });
 
-    $boton.on("click",function(e){
-        e.preventDefault()
+    $("#formulario").on("submit",function(e){
         var seguir=true; //indica si podemos enviar los datos
         //validar nombre
-        alert(/[A-Za-z]{2}/.test($nombre.val())==false)
         if(/[A-Za-z]{2}/.test($nombre.val())==false){
-            alert("aqui");
-            error(nombre,"El nombre debe tener al menos dos letras");
+            error($nombre,"El nombre debe tener al menos dos letras");
             seguir=false;
         }
         //validar apellido1
         else if(/[A-Za-z]{2}/.test($apellido1.val())==false){
-            error(apellido1,"El primer apellido debe tener al menos dos letras");
+            error($apellido1,"El primer apellido debe tener al menos dos letras");
             seguir=false;
         }
         //validar apellido2
         else if(/[A-Za-z]{2}/.test($apellido2.val())==false){
-            error(apellido2,"El segundo apellido debe tener al menos dos letras");
+            error($apellido2,"El segundo apellido debe tener al menos dos letras");
             seguir=false;
         }
-        //validar NF
+        //validar NIF
         else if(/^([KLMXYZ]|[0-9])[0-9]{7}[A-Z]/.test($nif.val())==false){
-            error(nif,"El formato del NIF no es válido");
+            error($nif,"El formato del NIF no es válido");
             seguir=false;
         }
         else{
@@ -47,7 +47,7 @@ $(function(){
             //validación de letra correcta
             //primero miramos que el NIF no empiece por K si el usuario tiene más de 14 años
             if(parseInt($edad.val())>14 && codigo[0]=="K"){
-                error(nif,"Con esa edad el NIF no puede empezar por K");
+                error($nif,"Con esa edad el NIF no puede empezar por K");
                 seguir=false;
             }
             else if (/[KLM]/.test(codigo[0])){
@@ -69,7 +69,7 @@ $(function(){
                 if(cifraFinal!=0) cifraFinal=10-cifraFinal;
                 if(arrayLetras[cifraFinal]!=codigo[8]){
                     seguir=false;
-                    error(nif, "Letra final no válida para ese NIF");
+                    error($nif, "Letra final no válida para ese NIF");
                 }
 
             }
@@ -86,7 +86,7 @@ $(function(){
                 var resto=numero%23;
                 if(letras[resto]!=codigo[8]){
                     seguir=false;
-                    error(nif, "Letra final no válida para ese DNI o NIE");
+                    error($nif, "Letra final no válida para ese DNI o NIE");
                 }
 
             }

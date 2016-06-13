@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color: white;
 }
 #formulario{
     position:absolute;
@@ -9,44 +9,51 @@ body{
     top:50%;
     margin-left:-200px;
     margin-top:-125px;
-    background-color: #26aae7;
+    background-color: white;
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
 }
 #formulario h1{
     font-family:Verdana,Arial,sans-serif;
-    color:white;
-    background-color: #0000b3;
+    color:gray;
+    border-bottom:1px solid gray;
     margin:5px;
-    border-radius: 10px;
     padding:5px;
     font-size: 1.6em;;
     text-align: center;
+    font-weight: normal;
 }
 label{
     font-family: Verdana,Arial,sans-serif;
-    font-weight: bold;
     margin-left:10px;
 }
 input{
-    border:solid 2px #0000de;
-    font-weight: bold;;
-    font-family: Georgia,"Times New Roman",serif;
+    border:solid 2px gray;
+    font-weight: normal;;
+    background-color: #EEEEEE;
+    font-family: Verdana, Arial, sans-serif;
 }
 button{
     width:100px;
     height:30px;
-    font-weight:bold;
+    font-weight:normal;
     font-family: Verdana,Arial,sans-serif;
-    color:#0000b3;
+    outline:none;
+    border:1px solid gray;
+    background-color: #ae5b36;
+    color:white;
+}
+button:hover{
+    background-color: #e14a00;
 }
 #error{
     position:absolute;
+    font-family: Verdana, Arial, sans-serif;
     left:0;
     top:0;
     width:100%;
     background-color:red;
     color:white;
-    font-weight:bold;
     font-size:1.5em;
 }
 #error p{
@@ -59,7 +66,8 @@ button{
 }
 .centrada{
     text-align: center;
-    background-color: #0000b3;
+    border-top:1px solid gray;
+    padding-top:10px;
 }
 table{
     width:100%;

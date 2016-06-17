@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego del helicoptero</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div id="marcador">
+    <p>Velocidad: <span id="flechaH"></span>
+        <span id="velocidadH"></span>, <span id="flechaV"></span>
+        <span id="velocidadV"></span>
+    </p>
+</div>
+<div id="bravo">¡BRAVO!</div>
+<div id="fondo"></div>
+<div id="helicoptero"></div>
+<div id="plataforma"></div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+
+
+    $(function(){
+        var gravedad=0;
+
+        var helicoptero={
+            velocidadH:0,
+            velocidadV:0,
+            $capa:$("#helicoptero")
+        };
+
+        var temp=setInterval(function(){
+            helicoptero.$capa.offset({
+                left:helicoptero.$capa.offset().left+
+                    helicoptero.velocidadH,
+                top:helicoptero.$capa.offset().top-
+                    helicoptero.velocidadV+gravedad
+            })
+        },100);
+
+
+        $(document.body).on("keydown",function(e){
+            gravedad=2;
+            if(e.which==39){
+                helicoptero.velocidadH++;
+            }
+            else if(e.which==37){
+                helicoptero.velocidadH--;
+            }
+            else if(e.which==38){
+                helicoptero.velocidadV++;
+            }
+            else if(e.which==40){
+                helicoptero.velocidadV--;
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

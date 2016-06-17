@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen práctico 5</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<section id="fondo">
+    <div id="texto">Hola</div>
+</section>
+<section id="control">
+    <form action="#">
+        <label for="color">Color de la letra</label>
+        <input type="color" id="color" name="color" value="#FFFFFF">
+        <label for="iTexto">Texto</label>
+        <input type="text" id="iTexto" name="iTexto" value="Texto"><br>
+        <span>Fondo:</span>
+        <input type="radio" id="carretera" name="fondo" min="1" max="20" value="carretera">
+        <label for="carretera">Carretera</label>
+        <input type="radio" id="montana" name="fondo" value="montana">
+        <label for="montana">Montaña</label>
+        <input type="radio" id="muro" name="fondo" value="muro">
+        <label for="muro">Muro</label>
+        <input type="radio" id="puente" name="fondo" checked value="puente">
+        <label for="puente">Puente</label><br>
+        <button id="animar">Animar</button>
+    </form>
+</section>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/acciones.js"></script>
+</body>
+</html>

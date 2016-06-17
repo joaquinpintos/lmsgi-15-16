@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+
+body{
+    margin:0;
+    font-family: "Source Code Pro",monospace;
+    font-weight: 300;
+    color:white;
+    background-color: #2d2d2d;
+    background-image: url(img/karakorum2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size:100%;
+}
+section{
+    max-width:750px;
+    margin:auto;
+}
+p{
+    text-align: justify;
+}
+
+h1,h2{
+    font-weight: 300;
+    text-align: center;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+td:first-of-type,th:first-of-type{
+    width:70%;
+}
+
+table.form{
+    width:500px;
+    margin:auto;
+    margin-top:1em;
+}
+table.form td,table.form td:first-of-type{
+    width:33%;
+}
+
+th,h2{
+    background-color: rgba(255,255,255,.5);
+    color:black;
+}
+h2{
+    margin-top:3em;
+}
+
+td{
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+td:nth-of-type(2){
+    text-align: center;
+}
+
+tr:last-of-type td{
+    border:none;
+}
+
+tr:hover td{
+    background-color:rgba(255,255,255,.1);
+}
+
+figure{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+article{
+    border:1px solid rgba(255,255,255,.5);
+    padding:1em 0;
+}
+
+img{
+    border:1px solid white;
+    padding:25px;
+}
+figcaption{
+    background-color: rgba(255,255,255,.5);
+    color:black;
+    text-align: center;
+    width:100%;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    border:1px dotted white;
+}
+a:hover{
+    background-color:rgba(255,255,255,.5);
+    border:none;
+    color:black;
+}
+form{
+    text-align: center;
+}
+input,select{
+    border:none;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    font-family: "Source Code Pro",monospace;
+    background-color:transparent;
+    font-size:1.5em;
+    width:500px;
+    outline:none;
+    color:white;
+}
+
+input{
+    background-image:url(img/user.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+input[type="email"]{
+    background-image: url(img/email.png);
+}
+input[type="radio"]{
+    display:none;
+}
+label{
+    opacity:.5;
+}
+input[type="radio"]:checked+label{
+    opacity:1;
+}
+option{
+    color:black;
+}
+
+button{
+    margin-top:2em;
+    font-family: "Source Code Pro",monospace;
+    background-color:transparent;
+    font-size:1.5em;
+    color:white;
+    outline: none;
+    border:1px solid rgba(255,255,255,.5);
+    width:500px;
+}
+
+button:hover{
+    background-color: rgba(255,255,255,.5);
+    color:black;
+    border:none;
+}
+
+fieldset{
+    width:500px;
+    margin:auto;
+    margin-top:1em;
+}

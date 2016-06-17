@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Viajes al Karakorum</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section id="contenido">
+        <h1>Viajes al Karakorum</h1>
+        <p>Nuestra agencia es líder en viajes de aventura a la cordillera del Karakorum.</p>
+        <p>Desde hace 40 años realizamos travesías por todo el Himalaya, y especialmente por el Karakorum.</p>
+        <p>Hemos subido a montañas de 7000 e incluso 8000 metros (Gasherbrum) y en todos los viajes hemos conseguido la ausencia total de siniestranlidad.</p>
+        <p>EL único requisito es realizar una evaluación de capacidades físicas que nos permita asegurar que puedes realizar este tipo de viaje.</p>
+        <table>
+            <tr>
+                <th>VIAJES - 2016</th>
+                <th>PRECIO</th>
+            </tr>
+            <tr>
+                <td>Travesía Karakorum I</td>
+                <td>2190 &euro;</td>
+            </tr>
+            <tr>
+                <td>Travesía Karakorum II</td>
+                <td>2690 &euro;</td>
+            </tr>
+            <tr>
+                <td>Vista del K2</td>
+                <td>3500 &euro;</td>
+            </tr>
+            <tr>
+                <td><a href="subidas/masherbrum.html">Subida al Masherbrum</a></td>
+                <td>5800 &euro;</td>
+            </tr>
+            <tr>
+                <td><a href="subidas/rakaposhi.html">Subida al Rakaposhi</a></td>
+                <td>4350 &euro;</td>
+            </tr>
+
+        </table>
+        <h2>Formulario de petición de información</h2>
+        <article id="form">
+            <form action="http://192.168.2.211/examenR2.php" method="post">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required><br>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required><br>
+                <input type="email" name="email" id="email" placeholder="email" required><br>
+                <select name="viaje" id="viaje">
+                    <option value="1">Travesía Karakorum I</option>
+                    <option value="2">Travesía Karakorum II</option>
+                    <option value="3">Vista del K2</option>
+                    <option value="4">Subida al Masherbrum</option>
+                    <option value="5">Subida al Rakaposhi</option>
+                </select><br>
+                <fieldset>
+                    <legend>Seguro</legend>
+                    <table class="form">
+                        <tr>
+                            <td>
+                                <input type="radio" name="seguro" id="completo" value="1" checked>
+                                <label for="completo">
+                                    Cobertura Completa <br>
+                                    1500 &euro;
+                                </label>
+                            </td>
+                            <td>
+                                <input type="radio" name="seguro" id="medio" value="2">
+                                <label for="medio">
+                                    Cobertura media <br>
+                                    1200 &euro;
+                                </label>
+                            </td>
+                            <td>
+                                <input type="radio" name="seguro" id="obligatorio" value="3">
+                                <label for="obligatorio">
+                                    Cobertura obligatoria <br>
+                                    900 &euro;
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <button>Enviar</button>
+            </form>
+        </article>
+    </section>
+
+</body>
+</html>

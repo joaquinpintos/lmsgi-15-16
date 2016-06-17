@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+a{
+    text-decoration: none;
+}
+
+/*************************************
+* Barra de navegación
+***************************************/
+body{
+    font-family: "Open Sans",sans-serif;
+    margin:0;
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100px;
+    z-index:500;
+    background-color:#3b3e43
+}
+
+nav img{
+    margin-left:30px;
+}
+
+nav img:hover{
+    background-color:white;
+    transition:1s;
+}
+
+#enlaces{
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+}
+
+#enlaces a{
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right:20px;
+    line-height:100px;
+}
+
+#enlaces a:hover {
+    background-color:white;
+    color: rgb(59, 62, 67);
+    transition:1s;
+}
+
+/******************************
+* Filtros
+**************************/
+#filtros{
+    position:fixed;
+    top:100px;
+    left:0;
+    width:160px;
+    bottom:0;
+    z-index:200;
+    padding-left:20px;
+    padding-right:20px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+#filtros h2{
+    text-align: left;
+    margin:10px 0;
+    padding-bottom:20px;
+    border-bottom:1px solid #b9b9b9;
+}
+
+[type="checkbox"]{
+    display:none;
+}
+[type="checkbox"]+label{
+    padding-left:35px;
+    background-image:url(../img/check1.png);
+    background-repeat:no-repeat;
+    background-position: left;
+    color: hsl(0,0%,61%);
+}
+[type="checkbox"]+label:hover{
+    background-image:url(../img/check2.png);
+}
+[type="checkbox"]:checked+label{
+    background-image:url(../img/check3.png);
+}
+
+
+/******************************
+cUERPO
+**************************/
+#cuerpo{
+    position:fixed;
+    top:100px;
+    left:200px;
+    right:0;
+    bottom:0;
+    color:hsl(0,0%,61%);;
+    overflow-y:auto;
+    z-index:300;
+}
+
+#cuerpo article{
+    position:relative;
+    width:200px;
+    height:220px;
+    display:inline-block;
+    margin:30px;
+    text-align: center;
+}
+
+
+#cuerpo article:hover{
+    background-color: #fbd1b0;
+    transition:1s;
+}
+
+#cuerpo article img{
+    width:80px;
+    margin:0;
+    padding:0;
+}
+
+#cuerpo article h2 {
+    text-align: center;
+    font-size:1.2em;
+    color:black;
+    margin:0;
+}
+#cuerpo article p {
+    margin:0;
+    font-size:.8em;
+    font-weight: 700;
+}
+
+#cuerpo p a{
+    color:#18a3fa;
+    text-decoration: none;
+}
+#cuerpo p a:hover{
+    text-decoration: underline;
+    transition:1s;
+}
+
+#cuerpo article h2 a{
+    color:black;
+    text-decoration: none;
+}
+#cuerpo article:hover h2 a{
+    color:#18a3fa;
+}
+#cuerpo article h2 a:hover{
+    text-decoration:underline;
+}
+#cuerpo strong{
+    color: #cf7c42;
+}
+
+
+/***************Botones*************/
+
+button{
+    border:none;
+    background-color:#18a3fa;
+    border-radius:30px;
+    padding:5px;
+    color:white;
+    margin:10px 0;
+    width:90%;
+    font-weight: 700;
+    font-family: "Open Sans",sans-serif;
+    outline:none;
+}
+button:hover {
+    background-color:#fa855a;
+    transition:1s;
+}
+
+
+#cuerpo button{
+    visibility:hidden;
+}
+
+#cuerpo article:hover button{
+    visibility:visible;
+    transition:1s;
+}
+
+@media screen and (max-width:600px){
+    #filtros{
+        display:none;
+    }
+    #enlaces{
+        display:none;
+    }
+    #cuerpo{
+        left:0;
+    }
+}

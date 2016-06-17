@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+
+body{
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+#fondo{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#2c8b61 url('../img/learning.png') no-repeat center;
+    background-size:cover;
+    z-index:1;
+}
+
+.telon{
+    position:absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10;
+}
+
+#inicio{
+    top:0;
+    background:#465057;
+}
+#contenido-inicio{
+    position:absolute;
+    width:500px;
+    left:50%;
+    margin-left:-250px;
+    text-align: center;
+}
+#pie-inicio{
+    position:absolute;
+    width:60px;
+    left:50%;
+    margin-left:-30px;
+    bottom:0;
+    height:86px;
+}
+
+#moocs{
+    position:absolute;
+    top:100%;
+}
+
+.moocs{
+    position:absolute;
+    width:25%;
+    top:0;
+    bottom:0;
+    border:1px solid white;
+}
+.moocs:hover{
+    overflow:auto;
+    background-color: rgba(70, 80, 87, 0.80);
+}
+.moocs img{
+    position:absolute;
+    width:100%;
+    top:40%;
+}
+.moocs:hover img {
+    position:static;
+}
+
+.moocs p{
+    display:none;
+}
+.moocs:hover p{
+    display:block;
+}
+
+#coursera{
+    left:0;
+}
+
+#edx{
+    left:25%;
+}
+#udacity{
+    left:50%;
+}
+#codecademy{
+    left:75%;
+}
+
+#iconitos{
+    position:absolute;
+    width:610px;
+    height:205px;
+    left:50%;
+    top:50%;
+    margin-left:-305px;
+    margin-top:-102px;
+}
+
+#iconos{
+    top:250%;
+    background-color:#465057;
+    height:50%;
+}
+
+#iconitos img{
+    display:inline-block;
+}
+
+h1{
+    text-align: center;
+    font-size:2em;
+    color:white;
+    font-family: Bitter,serif;
+    font-weight:700;
+}
+
+p{
+    color:white;
+    text-align: justify;
+    padding:10px;
+    margin:0;
+}
+
+@media screen and (orientation: portrait) {
+    #moocs {
+        height: 200%;
+    }
+
+    .moocs {
+        width: 50%;
+        height: 50%;
+    }
+
+    #edx {
+        left: 50%;
+    }
+
+    #udacity {
+        left: 0;
+        top: 50%;
+    }
+
+    #codecademy {
+        left: 50%;
+        top: 50%;
+    }
+
+    #iconos {
+        top: 350%;
+    }
+}

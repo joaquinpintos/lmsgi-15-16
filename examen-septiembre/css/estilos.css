@@ -1,0 +1,181 @@
+@import 'https://fonts.googleapis.com/css?family=Exo:700|PT+Sans:400,700';
+
+body{
+    margin:0;
+    font-family: "PT Sans",sans-serif;
+}
+#fondo{
+    position:fixed;
+    z-index:-1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url(../img/fondo-rio.png);
+    background-position:center bottom;
+    background-repeat: repeat-x;
+}
+
+figure{
+    text-align: center;
+}
+
+#logo{
+    width:300px;
+}
+header{
+    text-align:center;
+    font-family: "Exo",sans-serif;
+    font-weight: 700;
+}
+
+#cuerpo{
+    margin:auto;
+    text-align: center;
+}
+
+button{
+    outline: none;
+    border:1px solid gray;
+    background-color: white;
+    border-radius: 10px;
+    width:300px;
+    padding:.5em;
+    font-weight: 700;
+    color:gray;
+}
+
+button:hover{
+    background-color: lightgray;
+}
+button.mas{
+    margin-top:2em;
+}
+
+a{
+    color:black;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+#contenedorMenu{
+    text-align:center;
+}
+
+.menu{
+    position:relative;
+    width:300px;
+    height:300px;
+    display:inline-block;
+    overflow: hidden;
+    margin:0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50px;
+}
+
+#menuAtletismo{
+    background-image: url(../img/atletismo.JPG);
+}
+#menuNatacion{
+    background-image: url(../img/natacion.JPG);
+}
+#menuOtros{
+    background-image: url(../img/gimnasia.jpg);
+}
+
+.menu div{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    left:0;
+    height:60px;
+    background-color:lightgray;
+    display:none;
+}
+.menu div p {
+    font-size: 1.5em;
+    margin:15px;
+    font-weight: 700;
+}
+
+.menu:hover{
+    border:20px solid lightgray;
+}
+
+.menu:hover div{
+    display: block;
+}
+
+
+
+#cookies{
+    position: fixed;
+    z-index:1000;
+    bottom:50%;
+    left:0;
+    width:100%;
+    text-align: center;
+    background-color:lightgray;
+    display:none;
+}
+
+/*********tabla
+****/
+
+table{
+    margin:0 auto;
+    max-width:700px;
+    width:100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding:5px;
+}
+
+th:first-of-type{
+    text-align: left;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    color:gray;
+}
+
+tr:nth-of-type(2) td{
+    padding-top:1em;
+}
+
+td:nth-of-type(1){
+    color:gray;
+}
+td:nth-of-type(2){
+    text-align: left;
+}
+
+td:last-of-type{
+    font-weight: 700;
+}
+
+
+tr:nth-of-type(n+5) td{
+    display:none;
+
+}
+
+img.medalla{
+    width:15px;
+}
+
+
+@media screen and (min-width:1000px) {
+    .menu {
+        width: 500px;
+        height: 500px;
+    }
+}
